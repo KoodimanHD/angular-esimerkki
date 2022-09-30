@@ -1,15 +1,13 @@
 <h1>List</h1>
 
-
 <div>
   <table>
     <thead>
     <tr>
-      <td *ngFor="let key of Object.keys(events[0])">
-      <h3>{{key}}</h3>
-      </td>
+      <th *ngFor="let key of Object.keys(events[0])">{{key}}</th>
     </tr>
     </thead>
+
     <tbody>
     <tr *ngFor="let event of events">
       <td>{{event.id}}</td>
