@@ -1,0 +1,40 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "name": "Eppu Normaali",
+      "date": "2020-08-03T21:00:00.000Z",
+      "place": "Tavastia"
+    },
+    {
+      "id": 2,
+      "name": "Rajaton",
+      "date": "2020-08-22T21:00:00.000Z",
+      "place": "Savoy"
+    },
+    {
+      "id": 3,
+      "name": "Aili Ikonen",
+      "date": "2020-09-02T21:00:00.000Z",
+      "place": "Savoy"
+    },
+    {
+      "id": 4,
+      "name": "Testi",
+      "date": "2020-09-22T13:42:30.104Z",
+      "place": "Tavastia"
+    },
+    {
+      "id": 5,
+      "name": "Suuri tähti",
+      "date": "2021-01-25T10:54:21.971Z",
+      "place": "Savoy"
+    },
+    {
+      "id": 6,
+      "name": "Koronatähti",
+      "date": "2021-08-27T11:01:34.815Z",
+      "place": "Savoy"
+    }
+  ]
+}
