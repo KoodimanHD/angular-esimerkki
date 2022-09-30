@@ -5,8 +5,18 @@
   <table>
     <thead>
     <tr>
-      <td></td>
+      <td *ngFor="let key of Object.keys(events[0])">
+      <h3>{{key}}</h3>
+      </td>
     </tr>
     </thead>
+    <tbody>
+    <tr *ngFor="let event of events">
+      <td>{{event.id}}</td>
+      <td>{{event.name}}</td>
+      <td>{{event.date}}</td>
+      <td>{{event.place}}</td>
+    </tr>
+    </tbody>
   </table>
 </div>
