@@ -7,7 +7,12 @@ import {EventService} from "../event.service";
   templateUrl: './add.component.html',
   styleUrls: ['./add.component.css']
 })
+
 export class AddComponent implements OnInit {
+
+  submitted = false;
+
+  onSubmit() { this.submitted = true; this.addEvent()}
   event = new Event();
 
   constructor(private eventService: EventService) { }
