@@ -8,6 +8,9 @@ import {EventService} from "../event.service";
   styleUrls: ['./list.component.css']
 })
 
+/**
+ * Component class for listing events.
+ */
 export class ListComponent implements OnInit {
   events: Event[] = []
   Object = Object
@@ -18,6 +21,9 @@ export class ListComponent implements OnInit {
     this.getEvents()
   }
 
+  /**
+   * Get events through eventService.
+   */
   getEvents(): void {
     this.eventService.getEvents()
       .subscribe(events => this.events = events);

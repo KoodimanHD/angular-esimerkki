@@ -1,33 +1,17 @@
-<!--div>
-  <form (ngSubmit)="addEvent()">
-    <label>Name: </label>
-    <input type="text"
-           name = name
-           required
-           [(ngModel)]="event.name"/>
-    <label>Date: </label>
-    <input type="datetime-local"
-           name = date
-           required
-           [(ngModel)]="event.date"/>
-    <label>Place: </label>
-    <input type="text"
-           name = place
-           required
-           [(ngModel)]="event.place"/>
-    <button type="submit">Submit</button>
-  </form>
-</div-->
 <div class="container">
   <div>
-    <h1>Event Form</h1>
+    <h2>Add Event</h2>
     <form (ngSubmit)="onSubmit()" #eventForm="ngForm">
-
+      <!--Event Name-->
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" class="form-control" id="name"
+        <input type="text"
+               class="form-control"
+               id="name"
+               placeholder="Event name"
                required
-               [(ngModel)]="event.name" name="name"
+               [(ngModel)]="event.name"
+               name="name"
                #name="ngModel">
         <div [hidden]="name.valid || name.pristine"
              class="alert alert-danger">
@@ -35,24 +19,33 @@
         </div>
       </div>
 
+      <!--Event Date-->
       <div class="form-group">
         <label for="date">Date</label>
-        <input type="datetime-local" class="form-control" id="date"
+        <input type="datetime-local"
+               class="form-control"
+               id="date"
+               placeholder="Event date"
                required
-               [(ngModel)]="event.date" name="date"
+               [(ngModel)]="event.date"
+               name="date"
                #date="ngModel">
         <div [hidden]="date.valid || date.pristine"
-
              class="alert alert-danger">
           Date is required
         </div>
       </div>
 
+      <!--Event Place-->
       <div class="form-group">
         <label for="place">Place</label>
-        <input type="text" class="form-control" id="place"
+        <input type="text"
+               class="form-control"
+               id="place"
+               placeholder="Event place"
                required
-               [(ngModel)]="event.place" name="place"
+               [(ngModel)]="event.place"
+               name="place"
                #place="ngModel">
         <div [hidden]="place.valid || place.pristine"
              class="alert alert-danger">
@@ -60,7 +53,11 @@
         </div>
       </div>
 
-      <button type="submit" (click) = "onSubmit();eventForm.reset()" class="btn btn-success" [disabled]="!eventForm.form.valid">Submit</button>
+      <button type="submit"
+              (click) = "onSubmit();eventForm.reset()"
+              class="btn btn-success"
+              [disabled]="!eventForm.form.valid">Submit
+      </button>
     </form>
   </div>
 </div>

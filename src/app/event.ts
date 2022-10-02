@@ -1,3 +1,6 @@
+/**
+ * Model for events.
+ */
 export class Event {
   id: number = 0;
   name: string = '';

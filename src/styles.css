@@ -1,2 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@400&display=swap');
+
+html {
+  margin: 50px 20px 10px 20px;
+}
+
+body, td, tr {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-size: 15px;
+}

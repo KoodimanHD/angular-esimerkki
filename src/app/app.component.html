@@ -1,7 +1,12 @@
 <h1>{{title}}</h1>
-<nav>
-  <button routerLink="/home">Home</button>
-  <button routerLink="/add">Add</button>
-  <button routerLink="/list">List</button>
+<hr>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button class="btn btn-default navbar-btn btn-success" routerLink="/home">Home</button>
+      <button class="btn btn-default navbar-btn btn-success" routerLink="/add">Add</button>
+      <button class="btn btn-default navbar-btn btn-success" routerLink="/list">List</button>
+    </div>
+  </div>
 </nav>
 <router-outlet></router-outlet>

@@ -1,5 +1,4 @@
-<h1>List</h1>
-
+<h2>Events</h2>
 <div>
   <table>
     <thead>
@@ -7,7 +6,6 @@
       <th *ngFor="let key of Object.keys(events[0])">{{key | titlecase}}</th>
     </tr>
     </thead>
-
     <tbody>
     <tr *ngFor="let event of events">
       <td>{{event.id}}</td>
