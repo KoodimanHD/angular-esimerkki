@@ -1,6 +1,6 @@
-export interface Event {
-  id: number;
-  name: string
-  place: string
-  date: string;
+export class Event {
+  id: number = 0;
+  name: string = '';
+  place: string = '';
+  date: string = '';
 }

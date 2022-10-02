@@ -22,4 +22,12 @@ export class EventService {
         tap(_ => console.log('Events get'))
       );
   }
+
+  addEvent(event:Event): Observable<Event> {
+    const headers = { 'content-type': 'application/json'}
+    const body=JSON.stringify(event);
+    console.log(body)
+    return this.http.post<Event>(this.url, body,{'headers':headers})
+  }
+
 }
