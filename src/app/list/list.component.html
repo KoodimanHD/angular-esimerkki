@@ -4,7 +4,7 @@
   <table>
     <thead>
     <tr>
-      <th *ngFor="let key of Object.keys(events[0])">{{key}}</th>
+      <th *ngFor="let key of Object.keys(events[0])">{{key | titlecase}}</th>
     </tr>
     </thead>
 
